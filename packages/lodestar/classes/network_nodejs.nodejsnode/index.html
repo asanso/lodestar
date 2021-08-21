@@ -340,11 +340,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#peerdiscoveryoptions">
-    PeerDiscoveryOptions
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#peerstoreoptions">
     PeerStoreOptions
   </a>
@@ -362,6 +357,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#transportfactory">
     TransportFactory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#constructoroptions">
+    constructorOptions
   </a>
 </li>
 </ul>
@@ -465,6 +465,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#metrics">
     metrics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#natmanager">
+    natManager
   </a>
 </li>
 <li class="md-nav__item">
@@ -688,11 +693,11 @@
 <li><a href="./#multiaddr">Multiaddr</a></li>
 <li><a href="./#muxedstream">MuxedStream</a></li>
 <li><a href="./#muxerfactory">MuxerFactory</a></li>
-<li><a href="./#peerdiscoveryoptions">PeerDiscoveryOptions</a></li>
 <li><a href="./#peerstoreoptions">PeerStoreOptions</a></li>
 <li><a href="./#pubsub">Pubsub</a></li>
 <li><a href="./#relayoptions">RelayOptions</a></li>
 <li><a href="./#transportfactory">TransportFactory</a></li>
+<li><a href="./#constructoroptions">constructorOptions</a></li>
 </ul>
 <h3 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">¶</a></h3>
 <ul>
@@ -716,6 +721,7 @@
 <li><a href="./#identifyservice">identifyService</a></li>
 <li><a href="./#keychain">keychain</a></li>
 <li><a href="./#metrics">metrics</a></li>
+<li><a href="./#natmanager">natManager</a></li>
 <li><a href="./#peerid">peerId</a></li>
 <li><a href="./#peerrouting">peerRouting</a></li>
 <li><a href="./#peerstore">peerStore</a></li>
@@ -788,9 +794,6 @@
 <h3 id="muxerfactory">MuxerFactory<a class="headerlink" href="#muxerfactory" title="Permanent link">¶</a></h3>
 <p>• <strong>MuxerFactory</strong>:</p>
 <hr/>
-<h3 id="peerdiscoveryoptions">PeerDiscoveryOptions<a class="headerlink" href="#peerdiscoveryoptions" title="Permanent link">¶</a></h3>
-<p>• <strong>PeerDiscoveryOptions</strong>:</p>
-<hr/>
 <h3 id="peerstoreoptions">PeerStoreOptions<a class="headerlink" href="#peerstoreoptions" title="Permanent link">¶</a></h3>
 <p>• <strong>PeerStoreOptions</strong>:</p>
 <hr/>
@@ -802,11 +805,14 @@
 <hr/>
 <h3 id="transportfactory">TransportFactory<a class="headerlink" href="#transportfactory" title="Permanent link">¶</a></h3>
 <p>• <strong>TransportFactory</strong>:</p>
+<hr/>
+<h3 id="constructoroptions">constructorOptions<a class="headerlink" href="#constructoroptions" title="Permanent link">¶</a></h3>
+<p>• <strong>constructorOptions</strong>:</p>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new NodejsNode</strong>(<code>options</code>: <a href="../../interfaces/network_nodejs.ilibp2poptions/">ILibp2pOptions</a>): <em><a href="./">NodejsNode</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1359de3/packages/lodestar/src/network/nodejs/bundle.ts#L34">packages/lodestar/src/network/nodejs/bundle.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5091cf1/packages/lodestar/src/network/nodejs/bundle.ts#L34">packages/lodestar/src/network/nodejs/bundle.ts:34</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -827,7 +833,7 @@
 <h3 id="_config">_config<a class="headerlink" href="#_config" title="Permanent link">¶</a></h3>
 <p>• <strong>_config</strong>: <em>any</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_config">_config</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:80</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:79</p>
 <hr/>
 <h3 id="_dht">_dht<a class="headerlink" href="#_dht" title="Permanent link">¶</a></h3>
 <p>• <strong>_dht</strong>: <em>any</em></p>
@@ -837,7 +843,7 @@
 <h3 id="_discovery">_discovery<a class="headerlink" href="#_discovery" title="Permanent link">¶</a></h3>
 <p>• <strong>_discovery</strong>: <em><a href="../util.mapdef/#static-map">Map</a>‹any, any›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_discovery">_discovery</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:82</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:81</p>
 <hr/>
 <h3 id="_isstarted">_isStarted<a class="headerlink" href="#_isstarted" title="Permanent link">¶</a></h3>
 <p>• <strong>_isStarted</strong>: <em>boolean | undefined</em></p>
@@ -847,32 +853,32 @@
 <h3 id="_modules">_modules<a class="headerlink" href="#_modules" title="Permanent link">¶</a></h3>
 <p>• <strong>_modules</strong>: <em>any</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_modules">_modules</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:79</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:78</p>
 <hr/>
 <h3 id="_options">_options<a class="headerlink" href="#_options" title="Permanent link">¶</a></h3>
 <p>• <strong>_options</strong>: <em>any</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_options">_options</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:72</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:71</p>
 <hr/>
 <h3 id="_transport">_transport<a class="headerlink" href="#_transport" title="Permanent link">¶</a></h3>
 <p>• <strong>_transport</strong>: <em>any[]</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_transport">_transport</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:81</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:80</p>
 <hr/>
 <h3 id="addressmanager">addressManager<a class="headerlink" href="#addressmanager" title="Permanent link">¶</a></h3>
 <p>• <strong>addressManager</strong>: <em>AddressManager</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#addressmanager">addressManager</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:78</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:77</p>
 <hr/>
 <h3 id="addresses">addresses<a class="headerlink" href="#addresses" title="Permanent link">¶</a></h3>
 <p>• <strong>addresses</strong>: <em>any</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#addresses">addresses</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:77</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:76</p>
 <hr/>
 <h3 id="connectionmanager">connectionManager<a class="headerlink" href="#connectionmanager" title="Permanent link">¶</a></h3>
 <p>• <strong>connectionManager</strong>: <em>ConnectionManager</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#connectionmanager">connectionManager</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:83</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:82</p>
 <hr/>
 <h3 id="contentrouting">contentRouting<a class="headerlink" href="#contentrouting" title="Permanent link">¶</a></h3>
 <p>• <strong>contentRouting</strong>: <em>ContentRouting</em></p>
@@ -882,7 +888,7 @@
 <h3 id="datastore">datastore<a class="headerlink" href="#datastore" title="Permanent link">¶</a></h3>
 <p>• <strong>datastore</strong>: <em>any</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#datastore">datastore</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:75</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:74</p>
 <hr/>
 <h3 id="dialer">dialer<a class="headerlink" href="#dialer" title="Permanent link">¶</a></h3>
 <p>• <strong>dialer</strong>: <em>Dialer</em></p>
@@ -897,17 +903,22 @@
 <h3 id="keychain">keychain<a class="headerlink" href="#keychain" title="Permanent link">¶</a></h3>
 <p>• <strong>keychain</strong>: <em>Keychain | undefined</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#keychain">keychain</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:85</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:84</p>
 <hr/>
 <h3 id="metrics">metrics<a class="headerlink" href="#metrics" title="Permanent link">¶</a></h3>
 <p>• <strong>metrics</strong>: <em>Metrics | undefined</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#metrics">metrics</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:84</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:83</p>
+<hr/>
+<h3 id="natmanager">natManager<a class="headerlink" href="#natmanager" title="Permanent link">¶</a></h3>
+<p>• <strong>natManager</strong>: <em>NatManager</em></p>
+<p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#natmanager">natManager</a></em></p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:87</p>
 <hr/>
 <h3 id="peerid">peerId<a class="headerlink" href="#peerid" title="Permanent link">¶</a></h3>
 <p>• <strong>peerId</strong>: <em>PeerId</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#peerid">peerId</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:74</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:73</p>
 <hr/>
 <h3 id="peerrouting">peerRouting<a class="headerlink" href="#peerrouting" title="Permanent link">¶</a></h3>
 <p>• <strong>peerRouting</strong>: <em>PeerRouting</em></p>
@@ -917,7 +928,7 @@
 <h3 id="peerstore">peerStore<a class="headerlink" href="#peerstore" title="Permanent link">¶</a></h3>
 <p>• <strong>peerStore</strong>: <em>PeerStore</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#peerstore">peerStore</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:76</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:75</p>
 <hr/>
 <h3 id="pubsub_1">pubsub<a class="headerlink" href="#pubsub_1" title="Permanent link">¶</a></h3>
 <p>• <strong>pubsub</strong>: <em>PubsubBaseProtocol</em></p>
@@ -937,12 +948,12 @@
 <h3 id="transportmanager">transportManager<a class="headerlink" href="#transportmanager" title="Permanent link">¶</a></h3>
 <p>• <strong>transportManager</strong>: <em>TransportManager</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#transportmanager">transportManager</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:87</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:86</p>
 <hr/>
 <h3 id="upgrader">upgrader<a class="headerlink" href="#upgrader" title="Permanent link">¶</a></h3>
 <p>• <strong>upgrader</strong>: <em>Upgrader</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#upgrader">upgrader</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:86</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:85</p>
 <h2 id="accessors_1">Accessors<a class="headerlink" href="#accessors_1" title="Permanent link">¶</a></h2>
 <h3 id="connections">connections<a class="headerlink" href="#connections" title="Permanent link">¶</a></h3>
 <p>• <strong>get connections</strong>(): <em><a href="../util.mapdef/#static-map">Map</a>‹string, Connection[]›</em></p>
@@ -955,16 +966,18 @@
 <h3 id="multiaddrs">multiaddrs<a class="headerlink" href="#multiaddrs" title="Permanent link">¶</a></h3>
 <p>• <strong>get multiaddrs</strong>(): <em>Multiaddr[]</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#multiaddrs">multiaddrs</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:180</p>
-<p>Get peer advertising multiaddrs by concating the addresses used
-by transports to listen with the announce addresses.
-Duplicated addresses and noAnnounce addresses are filtered out.</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:183</p>
+<p>Get a deduplicated list of peer advertising multiaddrs by concatenating
+the listen addresses used by transports with any configured
+announce addresses as well as observed addresses reported by peers.</p>
+<p>If Announce addrs are specified, configured listen addresses will be
+ignored though observed addresses will still be included.</p>
 <p><strong>Returns:</strong> <em>Multiaddr[]</em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="_onstarting">_onStarting<a class="headerlink" href="#_onstarting" title="Permanent link">¶</a></h3>
 <p>▸ <strong>_onStarting</strong>(): <em>Promise‹void›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_onstarting">_onStarting</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:202</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:205</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="addlistener">addListener<a class="headerlink" href="#addlistener" title="Permanent link">¶</a></h3>
@@ -1128,7 +1141,7 @@ and the <code>Connection</code> will be returned</p>
 <h3 id="hangup">hangUp<a class="headerlink" href="#hangup" title="Permanent link">¶</a></h3>
 <p>▸ <strong>hangUp</strong>(<code>peer</code>: PeerId | Multiaddr | string): <em>Promise‹void›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#hangup">hangUp</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:187</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:190</p>
 <p>Disconnects all connections to the given <code>peer</code></p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1284,7 +1297,7 @@ Imports the private key as 'self', if needed.</p>
 <h3 id="ping">ping<a class="headerlink" href="#ping" title="Permanent link">¶</a></h3>
 <p>▸ <strong>ping</strong>(<code>peer</code>: PeerId | Multiaddr | string): <em>Promise‹number›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#ping">ping</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:194</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:197</p>
 <p>Pings the given peer in order to obtain the operation latency.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1411,7 +1424,7 @@ Imports the private key as 'self', if needed.</p>
 <h3 id="unhandle">unhandle<a class="headerlink" href="#unhandle" title="Permanent link">¶</a></h3>
 <p>▸ <strong>unhandle</strong>(<code>protocols</code>: string[] | string): <em>void</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#unhandle">unhandle</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:201</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:204</p>
 <p>Removes the handler for each protocol. The protocol
 will no longer be supported on streams.</p>
 <p><strong>Parameters:</strong></p>
@@ -1436,7 +1449,7 @@ will no longer be supported on streams.</p>
 <h3 id="static-create"><code>Static</code> create<a class="headerlink" href="#static-create" title="Permanent link">¶</a></h3>
 <p>▸ <strong>create</strong>(<code>options</code>: <a href="./#libp2poptions">Libp2pOptions</a> &amp; <a href="./#createoptions">CreateOptions</a>): <em>Promise‹Libp2p›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#static-create">create</a></em></p>
-<p>Defined in node_modules/libp2p/dist/src/index.d.ts:64</p>
+<p>Defined in node_modules/libp2p/dist/src/index.d.ts:63</p>
 <p>Like <code>new Libp2p(options)</code> except it will create a <code>PeerId</code>
 instance if one is not provided in options.</p>
 <p><strong>Parameters:</strong></p>
