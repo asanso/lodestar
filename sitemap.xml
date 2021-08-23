@@ -2591,7 +2591,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/params/enums/reflection-345.reflection-163.forkname/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/params/enums/reflection-263.reflection-1.forkname/</loc>
          <lastmod>2021-08-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2631,12 +2631,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/params/modules/reflection-345/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/params/modules/reflection-263/</loc>
          <lastmod>2021-08-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/params/modules/reflection-345.reflection-163/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/params/modules/reflection-263.reflection-1/</loc>
          <lastmod>2021-08-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
