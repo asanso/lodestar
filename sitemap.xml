@@ -181,6 +181,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/classes/altair_block.rootcache/</loc>
+         <lastmod>2021-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/classes/util.aggregationbitserror/</loc>
          <lastmod>2021-08-24</lastmod>
          <changefreq>daily</changefreq>
@@ -251,12 +256,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2056.reflection-828.ibeaconstatetransitionmetrics/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2071.reflection-842.ibeaconstatetransitionmetrics/</loc>
          <lastmod>2021-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2056.reflection-828.ihistogram/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2071.reflection-842.ihistogram/</loc>
          <lastmod>2021-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -331,12 +336,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2056/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2071/</loc>
          <lastmod>2021-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2056.reflection-828/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2071.reflection-842/</loc>
          <lastmod>2021-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
