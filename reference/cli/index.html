@@ -525,12 +525,6 @@
 <td>mainnet</td>
 </tr>
 <tr>
-<td><code>--preset</code></td>
-<td>string</td>
-<td>Specifies the default eth2 spec type</td>
-<td>mainnet</td>
-</tr>
-<tr>
 <td><code>--paramsFile</code></td>
 <td>string</td>
 <td>Network configuration file</td>
@@ -1370,7 +1364,7 @@
 <p>Quickly bootstrap a beacon node and multiple validators. Use for development and testing</p>
 <p><strong>Examples</strong></p>
 <p>Start a single beacon node with 8 interop validators</p>
-<div class="highlight"><pre><span></span><code>dev --dev.genesisValidators 8 --dev.reset
+<div class="highlight"><pre><span></span><code>dev --genesisValidators 8 --reset
 </code></pre></div>
 <p><strong>Options</strong></p>
 <p>Cmd <code>dev</code> has all the options from the <a href="#beacon"><code>beacon</code> cmd</a>.</p>
@@ -1384,12 +1378,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>--preset</code></td>
-<td>string</td>
-<td>Specifies the default eth2 spec type</td>
-<td>minimal</td>
-</tr>
 <tr>
 <td><code>--genesisValidators</code></td>
 <td>number</td>
