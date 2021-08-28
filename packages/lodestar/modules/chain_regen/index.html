@@ -300,6 +300,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#regencaller">
+    RegenCaller
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#regenerror">
     RegenError
   </a>
@@ -312,6 +317,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#regenerrortype">
     RegenErrorType
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regenfnname">
+    RegenFnName
   </a>
 </li>
 <li class="md-nav__item">
@@ -410,15 +420,19 @@
 <ul>
 <li><a href="./#istateregenerator">IStateRegenerator</a></li>
 <li><a href="./#queuedstateregenerator">QueuedStateRegenerator</a></li>
+<li><a href="./#regencaller">RegenCaller</a></li>
 <li><a href="./#regenerror">RegenError</a></li>
 <li><a href="./#regenerrorcode">RegenErrorCode</a></li>
 <li><a href="./#regenerrortype">RegenErrorType</a></li>
+<li><a href="./#regenfnname">RegenFnName</a></li>
 <li><a href="./#regenrequest">RegenRequest</a></li>
 <li><a href="./#stateregenerator">StateRegenerator</a></li>
 </ul>
 <h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">¶</a></h3>
 <ul>
+<li><a href="../../enums/chain_regen.regencaller/">RegenCaller</a></li>
 <li><a href="../../enums/chain_regen.regenerrorcode/">RegenErrorCode</a></li>
+<li><a href="../../enums/chain_regen.regenfnname/">RegenFnName</a></li>
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
 <ul>
@@ -449,6 +463,9 @@
 <h3 id="queuedstateregenerator">QueuedStateRegenerator<a class="headerlink" href="#queuedstateregenerator" title="Permanent link">¶</a></h3>
 <p>• <strong>QueuedStateRegenerator</strong>:</p>
 <hr/>
+<h3 id="regencaller">RegenCaller<a class="headerlink" href="#regencaller" title="Permanent link">¶</a></h3>
+<p>• <strong>RegenCaller</strong>:</p>
+<hr/>
 <h3 id="regenerror">RegenError<a class="headerlink" href="#regenerror" title="Permanent link">¶</a></h3>
 <p>• <strong>RegenError</strong>:</p>
 <hr/>
@@ -458,6 +475,9 @@
 <h3 id="regenerrortype">RegenErrorType<a class="headerlink" href="#regenerrortype" title="Permanent link">¶</a></h3>
 <p>• <strong>RegenErrorType</strong>:</p>
 <hr/>
+<h3 id="regenfnname">RegenFnName<a class="headerlink" href="#regenfnname" title="Permanent link">¶</a></h3>
+<p>• <strong>RegenFnName</strong>:</p>
+<hr/>
 <h3 id="regenrequest">RegenRequest<a class="headerlink" href="#regenrequest" title="Permanent link">¶</a></h3>
 <p>• <strong>RegenRequest</strong>:</p>
 <hr/>
@@ -466,7 +486,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="queuedstateregeneratormodules">QueuedStateRegeneratorModules<a class="headerlink" href="#queuedstateregeneratormodules" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>QueuedStateRegeneratorModules</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/05649cf/packages/lodestar/src/chain/regen/queued.ts#L17">packages/lodestar/src/chain/regen/queued.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/71b44e6/packages/lodestar/src/chain/regen/queued.ts#L17">packages/lodestar/src/chain/regen/queued.ts:17</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -497,24 +517,24 @@
 <hr/>
 <h3 id="regenerrortype_1">RegenErrorType<a class="headerlink" href="#regenerrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>RegenErrorType</strong>: <em>object | object | object | object | object | object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/05649cf/packages/lodestar/src/chain/regen/errors.ts#L13">packages/lodestar/src/chain/regen/errors.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/71b44e6/packages/lodestar/src/chain/regen/errors.ts#L13">packages/lodestar/src/chain/regen/errors.ts:13</a></em></p>
 <hr/>
 <h3 id="regenrequest_1">RegenRequest<a class="headerlink" href="#regenrequest_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>RegenRequest</strong>: <em>RegenRequestByKey[RegenRequestKey]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/05649cf/packages/lodestar/src/chain/regen/queued.ts#L30">packages/lodestar/src/chain/regen/queued.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/71b44e6/packages/lodestar/src/chain/regen/queued.ts#L30">packages/lodestar/src/chain/regen/queued.ts:30</a></em></p>
 <hr/>
 <h3 id="regenrequestbykey">RegenRequestByKey<a class="headerlink" href="#regenrequestbykey" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>RegenRequestByKey</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/05649cf/packages/lodestar/src/chain/regen/queued.ts#L29">packages/lodestar/src/chain/regen/queued.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/71b44e6/packages/lodestar/src/chain/regen/queued.ts#L29">packages/lodestar/src/chain/regen/queued.ts:29</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <hr/>
 <h3 id="regenrequestkey">RegenRequestKey<a class="headerlink" href="#regenrequestkey" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>RegenRequestKey</strong>: <em>keyof IStateRegenerator</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/05649cf/packages/lodestar/src/chain/regen/queued.ts#L28">packages/lodestar/src/chain/regen/queued.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/71b44e6/packages/lodestar/src/chain/regen/queued.ts#L28">packages/lodestar/src/chain/regen/queued.ts:28</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-regen_queue_max_len"><code>Const</code> REGEN_QUEUE_MAX_LEN<a class="headerlink" href="#const-regen_queue_max_len" title="Permanent link">¶</a></h3>
 <p>• <strong>REGEN_QUEUE_MAX_LEN</strong>: <em>256</em> = 256</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/05649cf/packages/lodestar/src/chain/regen/queued.ts#L15">packages/lodestar/src/chain/regen/queued.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/71b44e6/packages/lodestar/src/chain/regen/queued.ts#L15">packages/lodestar/src/chain/regen/queued.ts:15</a></em></p>
 </article>
 </div>
 </div>
