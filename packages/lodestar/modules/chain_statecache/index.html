@@ -261,6 +261,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#type-aliases">
+    Type aliases
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#variables">
     Variables
   </a>
@@ -288,6 +293,29 @@
 <a class="md-nav__link" href="#statecontextcache">
     StateContextCache
   </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-aliases_1">
+    Type aliases
+  </a>
+<nav aria-label="Type aliases" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maptrackermetrics">
+    MapTrackerMetrics
+  </a>
+<nav aria-label="MapTrackerMetrics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -351,7 +379,12 @@
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="../../classes/chain_statecache.checkpointstatecache/">CheckpointStateCache</a></li>
+<li><a href="../../classes/chain_statecache.maptracker/">MapTracker</a></li>
 <li><a href="../../classes/chain_statecache.statecontextcache/">StateContextCache</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#maptrackermetrics">MapTrackerMetrics</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">¶</a></h3>
 <ul>
@@ -369,18 +402,31 @@
 <hr/>
 <h3 id="statecontextcache">StateContextCache<a class="headerlink" href="#statecontextcache" title="Permanent link">¶</a></h3>
 <p>• <strong>StateContextCache</strong>:</p>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
+<h3 id="maptrackermetrics">MapTrackerMetrics<a class="headerlink" href="#maptrackermetrics" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>MapTrackerMetrics</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eab9448/packages/lodestar/src/chain/stateCache/mapMetrics.ts#L3">packages/lodestar/src/chain/stateCache/mapMetrics.ts:3</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>reads</strong>: <em><a href="../metrics/#iavgminmax">IAvgMinMax</a></em></p>
+</li>
+<li>
+<p><strong>secondsSinceLastRead</strong>: <em><a href="../metrics/#iavgminmax">IAvgMinMax</a></em></p>
+</li>
+</ul>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-max_epochs"><code>Const</code> MAX_EPOCHS<a class="headerlink" href="#const-max_epochs" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_EPOCHS</strong>: <em>10</em> = 10</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/241540f/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L6">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eab9448/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L7">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:7</a></em></p>
 <hr/>
 <h3 id="const-max_states"><code>Const</code> MAX_STATES<a class="headerlink" href="#const-max_states" title="Permanent link">¶</a></h3>
-<p>• <strong>MAX_STATES</strong>: <em>96</em> = 96</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/241540f/packages/lodestar/src/chain/stateCache/stateContextCache.ts#L6">packages/lodestar/src/chain/stateCache/stateContextCache.ts:6</a></em></p>
+<p>• <strong>MAX_STATES</strong>: <em>number</em> = 3 * 32</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eab9448/packages/lodestar/src/chain/stateCache/stateContextCache.ts#L7">packages/lodestar/src/chain/stateCache/stateContextCache.ts:7</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="tocheckpointhexkey">toCheckpointHexKey<a class="headerlink" href="#tocheckpointhexkey" title="Permanent link">¶</a></h3>
 <p>▸ <strong>toCheckpointHexKey</strong>(<code>cp</code>: object): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/241540f/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L117">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:117</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eab9448/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L129">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:129</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>cp</strong>: <em>object</em></p>
 <table>
@@ -405,7 +451,7 @@
 <hr/>
 <h3 id="tocheckpointkey">toCheckpointKey<a class="headerlink" href="#tocheckpointkey" title="Permanent link">¶</a></h3>
 <p>▸ <strong>toCheckpointKey</strong>(<code>cp</code>: Checkpoint): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/241540f/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L113">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:113</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eab9448/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L125">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:125</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

@@ -91,12 +91,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/api/modules/reflection-1674/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/api/modules/reflection-1676/</loc>
          <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/api/modules/reflection-1674.reflection-1515/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/api/modules/reflection-1676.reflection-1517/</loc>
          <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1211,6 +1211,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_statecache.maptracker/</loc>
+         <lastmod>2021-08-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_statecache.statecontextcache/</loc>
          <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
@@ -1362,6 +1367,11 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/metrics_server.httpmetricsserver/</loc>
+         <lastmod>2021-08-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/metrics_utils.avgminmax/</loc>
          <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
