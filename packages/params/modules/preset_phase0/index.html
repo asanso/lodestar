@@ -348,11 +348,11 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-bigint64"><code>Const</code> BigInt64<a class="headerlink" href="#const-bigint64" title="Permanent link">¶</a></h3>
 <p>• <strong>BigInt64</strong>: <em>BigIntUintType‹›</em> = new BigIntUintType({byteLength: 8})</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1629df1/packages/params/src/preset/phase0/ssz.ts#L7">preset/phase0/ssz.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9ae9746/packages/params/src/preset/phase0/ssz.ts#L7">preset/phase0/ssz.ts:7</a></em></p>
 <hr/>
 <h3 id="const-number64"><code>Const</code> Number64<a class="headerlink" href="#const-number64" title="Permanent link">¶</a></h3>
 <p>• <strong>Number64</strong>: <em>NumberUintType‹›</em> = new NumberUintType({byteLength: 8})</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1629df1/packages/params/src/preset/phase0/ssz.ts#L6">preset/phase0/ssz.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9ae9746/packages/params/src/preset/phase0/ssz.ts#L6">preset/phase0/ssz.ts:6</a></em></p>
 <hr/>
 <h3 id="const-phase0preset"><code>Const</code> Phase0Preset<a class="headerlink" href="#const-phase0preset" title="Permanent link">¶</a></h3>
 <p>• <strong>Phase0Preset</strong>: <em>ContainerType‹<a href="../../interfaces/preset_phase0.iphase0preset/">IPhase0Preset</a>›</em> = new ContainerType<iphase0preset>({
@@ -370,8 +370,8 @@ SAFE_SLOTS_TO_UPDATE_JUSTIFIED: Number64,
 
 // Gwei Values
 MIN_DEPOSIT_AMOUNT: BigInt64,
-MAX_EFFECTIVE_BALANCE: BigInt64,
-EFFECTIVE_BALANCE_INCREMENT: BigInt64,
+MAX_EFFECTIVE_BALANCE: Number64,
+EFFECTIVE_BALANCE_INCREMENT: Number64,
 
 // Time parameters
 MIN_ATTESTATION_INCLUSION_DELAY: Number64,
@@ -389,12 +389,12 @@ HISTORICAL_ROOTS_LIMIT: Number64,
 VALIDATOR_REGISTRY_LIMIT: Number64,
 
 // Reward and penalty quotients
-BASE_REWARD_FACTOR: BigInt64,
-WHISTLEBLOWER_REWARD_QUOTIENT: BigInt64,
-PROPOSER_REWARD_QUOTIENT: BigInt64,
-INACTIVITY_PENALTY_QUOTIENT: BigInt64,
-MIN_SLASHING_PENALTY_QUOTIENT: BigInt64,
-PROPORTIONAL_SLASHING_MULTIPLIER: BigInt64,
+BASE_REWARD_FACTOR: Number64,
+WHISTLEBLOWER_REWARD_QUOTIENT: Number64,
+PROPOSER_REWARD_QUOTIENT: Number64,
+INACTIVITY_PENALTY_QUOTIENT: Number64,
+MIN_SLASHING_PENALTY_QUOTIENT: Number64,
+PROPORTIONAL_SLASHING_MULTIPLIER: Number64,
 
 // Max operations per block
 MAX_PROPOSER_SLASHINGS: Number64,
@@ -405,7 +405,7 @@ MAX_VOLUNTARY_EXITS: Number64,
 </code></pre></div>
 <p>},
 })</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1629df1/packages/params/src/preset/phase0/ssz.ts#L9">preset/phase0/ssz.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9ae9746/packages/params/src/preset/phase0/ssz.ts#L9">preset/phase0/ssz.ts:9</a></em></p>
 </article>
 </div>
 </div>
