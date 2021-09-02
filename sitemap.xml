@@ -151,11 +151,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/classes/allforks_util.cachedvalidatorlist/</loc>
-         <lastmod>2021-09-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/classes/allforks_util.epochcontext/</loc>
          <lastmod>2021-09-02</lastmod>
          <changefreq>daily</changefreq>
