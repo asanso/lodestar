@@ -801,6 +801,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/fork-choice/classes/forkchoice.forkchoicestore/</loc>
+         <lastmod>2021-09-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/fork-choice/classes/protoarray.protoarray-1/</loc>
          <lastmod>2021-09-13</lastmod>
          <changefreq>daily</changefreq>
@@ -1087,16 +1092,6 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_errors.voluntaryexiterror/</loc>
-         <lastmod>2021-09-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_forkchoice.forkchoicestore/</loc>
-         <lastmod>2021-09-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_forkchoice.lodestarforkchoice/</loc>
          <lastmod>2021-09-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
