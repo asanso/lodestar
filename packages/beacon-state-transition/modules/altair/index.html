@@ -285,11 +285,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#attestationroothex">
-    AttestationRootHex
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#attestationsubnets">
     AttestationSubnets
   </a>
@@ -332,11 +327,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#beaconstate">
     BeaconState
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#blockroothex">
-    BlockRootHex
   </a>
 </li>
 <li class="md-nav__item">
@@ -522,6 +512,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#root">
     Root
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#roothex">
+    RootHex
   </a>
 </li>
 <li class="md-nav__item">
@@ -774,7 +769,6 @@
 <li><a href="./#aggregateandproof">AggregateAndProof</a></li>
 <li><a href="./#attestation">Attestation</a></li>
 <li><a href="./#attestationdata">AttestationData</a></li>
-<li><a href="./#attestationroothex">AttestationRootHex</a></li>
 <li><a href="./#attestationsubnets">AttestationSubnets</a></li>
 <li><a href="./#attesterslashing">AttesterSlashing</a></li>
 <li><a href="./#blspubkey">BLSPubkey</a></li>
@@ -784,7 +778,6 @@
 <li><a href="./#beaconblockbody">BeaconBlockBody</a></li>
 <li><a href="./#beaconblockheader">BeaconBlockHeader</a></li>
 <li><a href="./#beaconstate">BeaconState</a></li>
-<li><a href="./#blockroothex">BlockRootHex</a></li>
 <li><a href="./#bytes20">Bytes20</a></li>
 <li><a href="./#bytes32">Bytes32</a></li>
 <li><a href="./#bytes4">Bytes4</a></li>
@@ -822,6 +815,7 @@
 <li><a href="./#pendingattestation">PendingAttestation</a></li>
 <li><a href="./#proposerslashing">ProposerSlashing</a></li>
 <li><a href="./#root">Root</a></li>
+<li><a href="./#roothex">RootHex</a></li>
 <li><a href="./#signedaggregateandproof">SignedAggregateAndProof</a></li>
 <li><a href="./#signedbeaconblock">SignedBeaconBlock</a></li>
 <li><a href="./#signedbeaconblockheader">SignedBeaconBlockHeader</a></li>
@@ -880,9 +874,6 @@
 <h3 id="attestationdata">AttestationData<a class="headerlink" href="#attestationdata" title="Permanent link">¶</a></h3>
 <p>• <strong>AttestationData</strong>:</p>
 <hr/>
-<h3 id="attestationroothex">AttestationRootHex<a class="headerlink" href="#attestationroothex" title="Permanent link">¶</a></h3>
-<p>• <strong>AttestationRootHex</strong>:</p>
-<hr/>
 <h3 id="attestationsubnets">AttestationSubnets<a class="headerlink" href="#attestationsubnets" title="Permanent link">¶</a></h3>
 <p>• <strong>AttestationSubnets</strong>:</p>
 <hr/>
@@ -909,9 +900,6 @@
 <hr/>
 <h3 id="beaconstate">BeaconState<a class="headerlink" href="#beaconstate" title="Permanent link">¶</a></h3>
 <p>• <strong>BeaconState</strong>:</p>
-<hr/>
-<h3 id="blockroothex">BlockRootHex<a class="headerlink" href="#blockroothex" title="Permanent link">¶</a></h3>
-<p>• <strong>BlockRootHex</strong>:</p>
 <hr/>
 <h3 id="bytes20">Bytes20<a class="headerlink" href="#bytes20" title="Permanent link">¶</a></h3>
 <p>• <strong>Bytes20</strong>:</p>
@@ -1023,6 +1011,9 @@
 <hr/>
 <h3 id="root">Root<a class="headerlink" href="#root" title="Permanent link">¶</a></h3>
 <p>• <strong>Root</strong>:</p>
+<hr/>
+<h3 id="roothex">RootHex<a class="headerlink" href="#roothex" title="Permanent link">¶</a></h3>
+<p>• <strong>RootHex</strong>:</p>
 <hr/>
 <h3 id="signedaggregateandproof">SignedAggregateAndProof<a class="headerlink" href="#signedaggregateandproof" title="Permanent link">¶</a></h3>
 <p>• <strong>SignedAggregateAndProof</strong>:</p>
@@ -1149,7 +1140,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="translateparticipation">translateParticipation<a class="headerlink" href="#translateparticipation" title="Permanent link">¶</a></h3>
 <p>▸ <strong>translateParticipation</strong>(<code>state</code>: <a href="../allforks/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>pendingAttesations</code>: PendingAttestation[]): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163faa9/packages/beacon-state-transition/src/altair/upgradeState.ts#L49">packages/beacon-state-transition/src/altair/upgradeState.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ec7e419/packages/beacon-state-transition/src/altair/upgradeState.ts#L49">packages/beacon-state-transition/src/altair/upgradeState.ts:49</a></em></p>
 <p>Translate_participation in https://github.com/ethereum/eth2.0-specs/blob/dev/specs/altair/fork.md</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1174,7 +1165,7 @@
 <hr/>
 <h3 id="upgradestate_1">upgradeState<a class="headerlink" href="#upgradestate_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>upgradeState</strong>(<code>state</code>: <a href="../allforks/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›): <em><a href="../allforks/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163faa9/packages/beacon-state-transition/src/altair/upgradeState.ts#L13">packages/beacon-state-transition/src/altair/upgradeState.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ec7e419/packages/beacon-state-transition/src/altair/upgradeState.ts#L13">packages/beacon-state-transition/src/altair/upgradeState.ts:13</a></em></p>
 <p>Upgrade a state from phase0 to altair.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1195,7 +1186,7 @@
 <hr/>
 <h3 id="upgradetreebackedstate">upgradeTreeBackedState<a class="headerlink" href="#upgradetreebackedstate" title="Permanent link">¶</a></h3>
 <p>▸ <strong>upgradeTreeBackedState</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: <a href="../allforks/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›): <em>TreeBacked‹BeaconState›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163faa9/packages/beacon-state-transition/src/altair/upgradeState.ts#L22">packages/beacon-state-transition/src/altair/upgradeState.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ec7e419/packages/beacon-state-transition/src/altair/upgradeState.ts#L22">packages/beacon-state-transition/src/altair/upgradeState.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
