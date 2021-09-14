@@ -305,6 +305,50 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#label-guide">
+    Label Guide
+  </a>
+<nav aria-label="Label Guide" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#status-pull-request-status">
+    status.* Pull Request Status
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mod-relevant-modules-and-components">
+    mod.* Relevant Modules and Components
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scope-scope-indicator">
+    scope.* Scope Indicator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prio-prioritization-indicator">
+    prio.* Prioritization Indicator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q-effort-quantization">
+    q.* Effort Quantization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spec-eth2-consensus-spec-version-target">
+    spec.* Eth2 Consensus Spec Version Target
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#meta-meta-labels-to-organize-miscelaneous-issues">
+    meta.* Meta Labels to organize Miscelaneous Issues
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#community">
     Community
   </a>
@@ -391,6 +435,50 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#label-guide">
+    Label Guide
+  </a>
+<nav aria-label="Label Guide" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#status-pull-request-status">
+    status.* Pull Request Status
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mod-relevant-modules-and-components">
+    mod.* Relevant Modules and Components
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scope-scope-indicator">
+    scope.* Scope Indicator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prio-prioritization-indicator">
+    prio.* Prioritization Indicator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q-effort-quantization">
+    q.* Effort Quantization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spec-eth2-consensus-spec-version-target">
+    spec.* Eth2 Consensus Spec Version Target
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#meta-meta-labels-to-organize-miscelaneous-issues">
+    meta.* Meta Labels to organize Miscelaneous Issues
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#community">
     Community
   </a>
@@ -445,7 +533,7 @@
 <p>Unsure where to begin contributing to Lodestar? Here are some ideas!</p>
 <ul>
 <li>:pencil2: See any typos? See any verbiage that should be changed or updated? Go for it! Github makes it easy to make contributions right from the browser.</li>
-<li>:mag_right: Look through our <a href="https://github.com/ChainSafe/lodestar/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee">outstanding unassigned issues</a>. <em>(Hint: look for issues labeled "good first issue"!)</em></li>
+<li>:mag_right: Look through our <a href="https://github.com/ChainSafe/lodestar/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee">outstanding unassigned issues</a>. <em>(Hint: look for issues labeled <code>meta0-goodfirstissue</code> or <code>meta1-helpwanted</code>!)</em></li>
 <li>:speech_balloon: Join our <a href="https://discord.gg/aMxzVcr">Discord chat</a>!
   <a href="https://discord.gg/aMxzVcr"><img alt="Discord" src="https://img.shields.io/discord/593655374469660673.svg?label=Discord&amp;logo=discord"/></a></li>
 </ul>
@@ -491,6 +579,88 @@
 <li>run <code>yarn check-types</code> from the command line</li>
 <li>Make sure that the tests are still passing:</li>
 <li>run <code>yarn test:unit</code> from the command line</li>
+</ul>
+<h2 id="label-guide">Label Guide<a class="headerlink" href="#label-guide" title="Permanent link">¶</a></h2>
+<p>Issues and pull-requests are subject to the following labeling guidelines.</p>
+<ul>
+<li>Each PR <strong>must have</strong> a <code>status.*</code> label indicating the status.</li>
+<li>Each Issue or PR <strong>must have</strong> a <code>mod.*</code> or <code>scope.*</code> label indicating which parts of the code are relevant.</li>
+<li>All other labels allow for further evaluation, e.g., priority, amount of work required, etc.</li>
+</ul>
+<p>Label descriptions can be found below.</p>
+<h6 id="status-pull-request-status"><code>status.*</code> Pull Request Status<a class="headerlink" href="#status-pull-request-status" title="Permanent link">¶</a></h6>
+<p>Status labels only apply to pull requests.
+* <code>status0-blocked</code>: This is blocked by another issue that requires resolving first.
+* <code>status1-donotmerge</code>: Merging this issue will break the build. Do not merge!
+* <code>status2-onice</code>: This work is on ice as per the reasons described by the author.
+* <code>status3-needsreview</code>: This pull-request needs a review.
+* <code>status4-needschanges</code>: This pull-request has issues that needs to be addressed first.
+* <code>status5-mergeready</code>: This pull-request has been reviewed well and can be merged.
+* <code>status6-bulldozer</code>: Pull request is reviewed and can be merged (used by the bulldozer bot).
+* <code>status7-opendiscussion</code>: This work is still being discussed.
+* <code>status9-workinprogress</code>: This work is still in progress and not ready for review.</p>
+<h6 id="mod-relevant-modules-and-components"><code>mod.*</code> Relevant Modules and Components<a class="headerlink" href="#mod-relevant-modules-and-components" title="Permanent link">¶</a></h6>
+<p>The Module labels should be applied to all issues and pull requests if possible.
+* <code>mod1-beaconchain</code>: The @chainsafe/lodestar beacon-chain module.
+* <code>mod2-validator</code>: The @chainsafe/lodestar-validator module.
+* <code>mod3-lightclient</code>: The @chainsafe/lodestar-light-client module.
+* <code>mod4-api</code>: The @chainsafe/lodestar-api module.
+* <code>mod5-cli</code>: The @chainsafe/lodestar-cli module.
+* <code>mod6-statetransition</code>: The @chainsafe/lodestar-beacon-state-transition module.
+* <code>mod7-types</code>: The @chainsafe/lodestar-types module.
+* <code>mod8-params</code>: The @chainsafe/lodestar-params module.
+* <code>mod9-utils</code>: The @chainsafe/lodestar-utils module.
+* <code>moda-config</code>: The @chainsafe/lodestar-config module.
+* <code>modb-database</code>: The @chainsafe/lodestar-db module.
+* <code>modc-forkchoice</code>: The @chainsafe/lodestar-fork-choice module.
+* <code>modd-spectests</code>: The @chainsafe/lodestar-spec-test-* modules.</p>
+<h6 id="scope-scope-indicator"><code>scope.*</code> Scope Indicator<a class="headerlink" href="#scope-scope-indicator" title="Permanent link">¶</a></h6>
+<p>Scope is comparable to Module labels but less strict with the definition of components. It applies to both, issues and pull requests.
+* <code>scope1-audits</code>: Resolves issue identified in the first audit.
+* <code>scope2-memory</code>: Issues to reduce and improve memory usage.
+* <code>scope3-performance</code>: Performance issue and ideas to improve performance.
+* <code>scope4-benchmarks</code>: All issues with regards to benchmarking.
+* <code>scope5-networking</code>: All issues related to networking, gossip, and libp2p.
+* <code>scope6-metrics</code>: All issues with regards to the exposed metrics.
+* <code>scope7-ssz</code>: All issues related to SSZ serialization and deserialization.
+* <code>scope8-bls</code>: All issues related to BLS and cryptography used.
+* <code>scope9-testnetdebugging</code>: Issues uncovered through running a node on a public testnet.
+* <code>scopea-eth1</code>: All issues related to the Eth1 provider.
+* <code>scopeb-ci</code>: All issues related to the Continuous Integration and Github Workflows.
+* <code>scopec-documentation</code>: All issues related to the Lodestar documentation.</p>
+<h6 id="prio-prioritization-indicator"><code>prio.*</code> Prioritization Indicator<a class="headerlink" href="#prio-prioritization-indicator" title="Permanent link">¶</a></h6>
+<p>A simple indicator of issue prioritization. It mainly applies to issues.
+* <code>prio0-critical</code>: Drop everything to resolve this immediately.
+* <code>prio2-high</code>: Resolve issues as soon as possible.
+* <code>prio5-medium</code>: Resolve this some time soon (tm).
+* <code>prio7-low</code>: This is nice to have.
+* <code>prio9-none</code>: We might get back to this one day (maybe).</p>
+<h6 id="q-effort-quantization"><code>q.*</code> Effort Quantization<a class="headerlink" href="#q-effort-quantization" title="Permanent link">¶</a></h6>
+<p>Effort estimations can help planning to tackle issues that are particulary easy or difficult with regard of work force required. It mainly applies to issues (before work is started).
+* <code>q0-trivial</code>: Can be fixed by anyone with access to a computer.
+* <code>q2-easy</code>: Can be fixed by copy and pasting from StackOverflow.
+* <code>q3-medium</code>: A fair chunk of work, not necessarily very hard but not trivial either
+* <code>q5-substantial</code>: Can be fixed by a developer with decent experience.
+* <code>q7-involved</code>: Can be fixed by a team of developers and probably takes some time.
+* <code>q9-epic</code>: Can only be fixed by John Skeet. ;)</p>
+<h6 id="spec-eth2-consensus-spec-version-target"><code>spec.*</code> Eth2 Consensus Spec Version Target<a class="headerlink" href="#spec-eth2-consensus-spec-version-target" title="Permanent link">¶</a></h6>
+<p>Issues that target a specific version of the Eth2 consensus spec, shall be tagged accordingly.
+* <code>spec0-phase0</code>: Issues targeting the initial Eth2 spec version.
+* <code>spec1-altair</code>: Issues targeting the Altair Eth2 spec version.
+* <code>spec3-merge</code>: Issues targeting the merge Eth2 spec version.
+* <code>spec5-phase1</code>: Issues targeting the Phase1 Eth2 spec version.
+* <code>spec7-phase2</code>: Issues targeting the Phase2 Eth2 spec version.</p>
+<h6 id="meta-meta-labels-to-organize-miscelaneous-issues"><code>meta.*</code> Meta Labels to organize Miscelaneous Issues<a class="headerlink" href="#meta-meta-labels-to-organize-miscelaneous-issues" title="Permanent link">¶</a></h6>
+<ul>
+<li><code>meta0-goodfirstissue</code>: Good first issues for newcomers and first-time contributors.</li>
+<li><code>meta1-helpwanted</code>: The author indicates that additional help is wanted.</li>
+<li><code>meta2-breakingchange</code>: Introduces breaking changes to DB, Validator, Beacon Node, or CLI interfaces. Handle with care!</li>
+<li><code>meta4-cosmetic</code>: The changes introduces are barely touching any code.</li>
+<li><code>meta5-technicaldebt</code>: Issues introducing or resolving technical debts.</li>
+<li><code>meta6-discussion</code>: Indicates a topic that requires input from various developers.</li>
+<li><code>meta7-botstale</code>: Label for stale issues (applied by the stale bot).</li>
+<li><code>meta8-excludefromchangelog</code>: This work is not relevant for the changelog (used by Github actions). Use sparingly!</li>
+<li><code>meta9-dependencies</code>: Pull requests that update a dependency (used by Dependabot).</li>
 </ul>
 <h2 id="community">Community<a class="headerlink" href="#community" title="Permanent link">¶</a></h2>
 <p>Come chat with us on <a href="https://discord.gg/aMxzVcr">Discord</a> and join our public weekly planning meetings!</p>
