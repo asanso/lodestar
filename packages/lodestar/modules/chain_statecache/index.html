@@ -294,6 +294,11 @@
     StateContextCache
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tocheckpointhex">
+    toCheckpointHex
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -304,13 +309,27 @@
 <nav aria-label="Type aliases" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#checkpointhex">
+    CheckpointHex
+  </a>
+<nav aria-label="CheckpointHex" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#maptrackermetrics">
     MapTrackerMetrics
   </a>
 <nav aria-label="MapTrackerMetrics" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#type-declaration">
+<a class="md-nav__link" href="#type-declaration_1">
     Type declaration:
   </a>
 </li>
@@ -346,8 +365,8 @@
 <nav aria-label="Functions" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#tocheckpointhexkey">
-    toCheckpointHexKey
+<a class="md-nav__link" href="#tocheckpointhex_1">
+    toCheckpointHex
   </a>
 </li>
 <li class="md-nav__item">
@@ -375,6 +394,7 @@
 <ul>
 <li><a href="./#checkpointstatecache">CheckpointStateCache</a></li>
 <li><a href="./#statecontextcache">StateContextCache</a></li>
+<li><a href="./#tocheckpointhex">toCheckpointHex</a></li>
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
 <ul>
@@ -384,6 +404,7 @@
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">¶</a></h3>
 <ul>
+<li><a href="./#checkpointhex">CheckpointHex</a></li>
 <li><a href="./#maptrackermetrics">MapTrackerMetrics</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">¶</a></h3>
@@ -393,7 +414,7 @@
 </ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="./#tocheckpointhexkey">toCheckpointHexKey</a></li>
+<li><a href="./#tocheckpointhex">toCheckpointHex</a></li>
 <li><a href="./#tocheckpointkey">toCheckpointKey</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">¶</a></h2>
@@ -402,11 +423,27 @@
 <hr/>
 <h3 id="statecontextcache">StateContextCache<a class="headerlink" href="#statecontextcache" title="Permanent link">¶</a></h3>
 <p>• <strong>StateContextCache</strong>:</p>
+<hr/>
+<h3 id="tocheckpointhex">toCheckpointHex<a class="headerlink" href="#tocheckpointhex" title="Permanent link">¶</a></h3>
+<p>• <strong>toCheckpointHex</strong>:</p>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
+<h3 id="checkpointhex">CheckpointHex<a class="headerlink" href="#checkpointhex" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>CheckpointHex</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c65dc37/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L9">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:9</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>epoch</strong>: <em>Epoch</em></p>
+</li>
+<li>
+<p><strong>rootHex</strong>: <em>RootHex</em></p>
+</li>
+</ul>
+<hr/>
 <h3 id="maptrackermetrics">MapTrackerMetrics<a class="headerlink" href="#maptrackermetrics" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>MapTrackerMetrics</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/525c9cc/packages/lodestar/src/chain/stateCache/mapMetrics.ts#L3">packages/lodestar/src/chain/stateCache/mapMetrics.ts:3</a></em></p>
-<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c65dc37/packages/lodestar/src/chain/stateCache/mapMetrics.ts#L3">packages/lodestar/src/chain/stateCache/mapMetrics.ts:3</a></em></p>
+<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>
 <p><strong>reads</strong>: <em><a href="../metrics/#iavgminmax">IAvgMinMax</a></em></p>
@@ -418,17 +455,16 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-max_epochs"><code>Const</code> MAX_EPOCHS<a class="headerlink" href="#const-max_epochs" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_EPOCHS</strong>: <em>10</em> = 10</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/525c9cc/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L8">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c65dc37/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L10">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:10</a></em></p>
 <hr/>
 <h3 id="const-max_states"><code>Const</code> MAX_STATES<a class="headerlink" href="#const-max_states" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_STATES</strong>: <em>number</em> = 3 * 32</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/525c9cc/packages/lodestar/src/chain/stateCache/stateContextCache.ts#L8">packages/lodestar/src/chain/stateCache/stateContextCache.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c65dc37/packages/lodestar/src/chain/stateCache/stateContextCache.ts#L8">packages/lodestar/src/chain/stateCache/stateContextCache.ts:8</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
-<h3 id="tocheckpointhexkey">toCheckpointHexKey<a class="headerlink" href="#tocheckpointhexkey" title="Permanent link">¶</a></h3>
-<p>▸ <strong>toCheckpointHexKey</strong>(<code>cp</code>: object): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/525c9cc/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L130">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:130</a></em></p>
+<h3 id="tocheckpointhex_1">toCheckpointHex<a class="headerlink" href="#tocheckpointhex_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>toCheckpointHex</strong>(<code>checkpoint</code>: Checkpoint): <em><a href="./#checkpointhex">CheckpointHex</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c65dc37/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L121">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:121</a></em></p>
 <p><strong>Parameters:</strong></p>
-<p>▪ <strong>cp</strong>: <em>object</em></p>
 <table>
 <thead>
 <tr>
@@ -438,20 +474,16 @@
 </thead>
 <tbody>
 <tr>
-<td><code>epoch</code></td>
-<td>Epoch</td>
-</tr>
-<tr>
-<td><code>root</code></td>
-<td>string</td>
+<td><code>checkpoint</code></td>
+<td>Checkpoint</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em></p>
+<p><strong>Returns:</strong> <em><a href="./#checkpointhex">CheckpointHex</a></em></p>
 <hr/>
 <h3 id="tocheckpointkey">toCheckpointKey<a class="headerlink" href="#tocheckpointkey" title="Permanent link">¶</a></h3>
-<p>▸ <strong>toCheckpointKey</strong>(<code>cp</code>: Checkpoint): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/525c9cc/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L126">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:126</a></em></p>
+<p>▸ <strong>toCheckpointKey</strong>(<code>cp</code>: <a href="./#checkpointhex">CheckpointHex</a>): <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c65dc37/packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts#L128">packages/lodestar/src/chain/stateCache/stateContextCheckpointsCache.ts:128</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -463,7 +495,7 @@
 <tbody>
 <tr>
 <td><code>cp</code></td>
-<td>Checkpoint</td>
+<td><a href="./#checkpointhex">CheckpointHex</a></td>
 </tr>
 </tbody>
 </table>
