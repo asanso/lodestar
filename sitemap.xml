@@ -2736,6 +2736,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/types/interfaces/merge.beaconblock/</loc>
+         <lastmod>2021-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/types/interfaces/merge.beaconblockbody/</loc>
+         <lastmod>2021-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/types/interfaces/merge.beaconstate/</loc>
+         <lastmod>2021-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/types/interfaces/merge.signedbeaconblock/</loc>
+         <lastmod>2021-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/types/interfaces/phase0_types.aggregateandproof/</loc>
          <lastmod>2021-09-14</lastmod>
          <changefreq>daily</changefreq>
@@ -2922,6 +2942,11 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/types/modules/altair_types/</loc>
+         <lastmod>2021-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/types/modules/merge/</loc>
          <lastmod>2021-09-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
