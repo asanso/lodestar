@@ -38,6 +38,7 @@ import {ForkDigestContext, IForkDigestContext} from "../util/forkDigestContext";
 import {LightClientIniter} from "./lightClient";
 import {AggregatedAttestationPool} from "./opPools/aggregatedAttestationPool";
 import {Archiver} from "./archiver";
+import {Eth2Context} from ".";
 
 export interface IBeaconChainModules {
   config: IBeaconConfig;
@@ -60,6 +61,7 @@ export class BeaconChain implements IBeaconChain {
   regen: IStateRegenerator;
   pendingBlocks: BlockPool;
   forkDigestContext: IForkDigestContext;
+  eth2Context: Eth2Context;
   lightclientUpdater: LightClientUpdater;
   lightClientIniter: LightClientIniter;
 
@@ -136,6 +138,11 @@ export class BeaconChain implements IBeaconChain {
       opts,
     });
 
+    this.eth2Context = {
+      activeValidatorCount: cachedState.currentShuffling.activeIndices.length,
+      currentSlot: clock.currentSlot,
+      currentEpoch: clock.currentEpoch,
+    };
     this.forkChoice = forkChoice;
     this.clock = clock;
     this.regen = regen;

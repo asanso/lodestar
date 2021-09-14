@@ -34,7 +34,7 @@ import {
   GOSSIP_D_HIGH,
   GOSSIP_D_LOW,
 } from "./scoringParameters";
-import {IBeaconChain, IBeaconClock} from "../../chain";
+import {Eth2Context} from "../../chain";
 
 export interface IGossipsubModules {
   config: IChainForkConfig;
@@ -43,9 +43,8 @@ export interface IGossipsubModules {
   metrics: IMetrics | null;
   signal: AbortSignal;
   forkDigestContext: IForkDigestContext;
+  eth2Context: Eth2Context;
   gossipHandlers: GossipHandlers;
-  clock: IBeaconClock;
-  chain: IBeaconChain;
 }
 
 /**
