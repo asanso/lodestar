@@ -24,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#introduction">
+<a class="md-skip" href="#contribution-guidlines">
           Skip to content
         </a>
 </div>
@@ -227,9 +227,90 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Contributing
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Contributing
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-started">
+    Getting Started
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tests">
+    Tests
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker">
+    Docker
+  </a>
+<nav aria-label="Docker" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beacon-node-only">
+    Beacon node only:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beacon-node-and-validator">
+    Beacon node and validator:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dockerized-metrics-local-beacon-node">
+    Dockerized metrics + local beacon node:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#first-time-contributor">
+    First-time Contributor?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reporting-a-bug">
+    Reporting a bug?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contribution-process">
+    Contribution process
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lodestar-monorepo">
+    Lodestar Monorepo
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#style-guide">
+    Style Guide
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#community">
+    Community
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -240,6 +321,81 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-started">
+    Getting Started
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tests">
+    Tests
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker">
+    Docker
+  </a>
+<nav aria-label="Docker" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beacon-node-only">
+    Beacon node only:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beacon-node-and-validator">
+    Beacon node and validator:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dockerized-metrics-local-beacon-node">
+    Dockerized metrics + local beacon node:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#first-time-contributor">
+    First-time Contributor?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reporting-a-bug">
+    Reporting a bug?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contribution-process">
+    Contribution process
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lodestar-monorepo">
+    Lodestar Monorepo
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#style-guide">
+    Style Guide
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#community">
+    Community
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -249,69 +405,72 @@
 <a class="md-content__button md-icon" href="https://github.com/chainsafe/lodestar/edit/master/docs/contributing.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h1>
-<blockquote>
+<h1 id="contribution-guidlines">Contribution Guidlines<a class="headerlink" href="#contribution-guidlines" title="Permanent link">¶</a></h1>
 <p>Thanks for your contribution to Lodestar. It's people like you that push the Ethereum ecosystem forward.</p>
-</blockquote>
-<h1 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="https://github.com/lerna/lerna">Lerna</a></li>
-<li><a href="https://yarnpkg.com/">Yarn</a></li>
+<li>:gear: <a href="https://nodejs.org/">NodeJS</a> (LTS/Fermium)</li>
+<li>:toolbox: <a href="https://yarnpkg.com/">Yarn</a>/<a href="https://lerna.js.org/">Lerna</a></li>
 </ul>
-<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">¶</a></h1>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">¶</a></h2>
 <ul>
-<li>Run <code>lerna bootstrap</code> or <code>yarn install</code> to install dependencies</li>
-<li>Run <code>yarn build</code> to build lib from source</li>
+<li>:gear: Run <code>lerna bootstrap</code> or <code>yarn install</code> to install dependencies.</li>
+<li>:gear: Run <code>yarn build</code> to build lib from source.</li>
+<li>:package: A <code>lodestar</code> binary will be bundled in <code>./packages/cli/bin</code>.</li>
+<li>:computer: Run <code>./lodestar --help</code> to get a list of available commands and argurments.</li>
 </ul>
-<h1 id="tests">Tests<a class="headerlink" href="#tests" title="Permanent link">¶</a></h1>
+<h2 id="tests">Tests<a class="headerlink" href="#tests" title="Permanent link">¶</a></h2>
 <ul>
-<li>Run <code>lerna run test:spec-min</code> for minimal spec tests</li>
-<li>Run <code>lerna run test:spec-main</code> for mainnet spec tests</li>
-<li>Run <code>lerna run test:unit</code> for unit tests</li>
-<li>Run <code>lerna run test:e2e</code> for end-to-end tests</li>
-<li>Run <code>lerna run test</code> to run all tests</li>
+<li>:test_tube: Run <code>lerna run test:spec-min</code> for minimal spec tests.</li>
+<li>:test_tube: Run <code>lerna run test:spec-main</code> for mainnet spec tests.</li>
+<li>:test_tube: Run <code>lerna run test:unit</code> for unit tests.</li>
+<li>:test_tube: Run <code>lerna run test:e2e</code> for end-to-end tests.</li>
+<li>:test_tube: Run <code>lerna run test</code> to run all tests.</li>
 </ul>
-<h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">¶</a></h1>
+<h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">¶</a></h2>
 <p>The docker-compose file requires that a <code>.env</code> file be present in this directory. The <code>default.env</code> file provides a template and can be copied <code>.env</code>:</p>
 <div class="highlight"><pre><span></span><code>cp default.env .env
 </code></pre></div>
-<p><strong>Beacon node only</strong></p>
+<h6 id="beacon-node-only">Beacon node only:<a class="headerlink" href="#beacon-node-only" title="Permanent link">¶</a></h6>
 <div class="highlight"><pre><span></span><code>docker-compose up -d
 </code></pre></div>
-<p><strong>Beacon node and validator</strong></p>
+<h6 id="beacon-node-and-validator">Beacon node and validator:<a class="headerlink" href="#beacon-node-and-validator" title="Permanent link">¶</a></h6>
 <p>First, you must have keystores and their secrets available locally at <code>./keystores</code> and <code>./secrets</code></p>
 <div class="highlight"><pre><span></span><code>docker-compose -f docker-compose.yml -f docker-compose.validator.yml up -d
 </code></pre></div>
-<p><strong>Dockerized metrics + local beacon node</strong></p>
+<h6 id="dockerized-metrics-local-beacon-node">Dockerized metrics + local beacon node:<a class="headerlink" href="#dockerized-metrics-local-beacon-node" title="Permanent link">¶</a></h6>
 <div class="highlight"><pre><span></span><code>docker-compose -f docker/docker-compose.local.yml up -d
 </code></pre></div>
-<h1 id="first-time-contributor">First-time Contributor?<a class="headerlink" href="#first-time-contributor" title="Permanent link">¶</a></h1>
+<h2 id="first-time-contributor">First-time Contributor?<a class="headerlink" href="#first-time-contributor" title="Permanent link">¶</a></h2>
 <p>Unsure where to begin contributing to Lodestar? Here are some ideas!</p>
 <ul>
-<li>See any typos? See any verbiage that should be changed or updated? Go for it! Github makes it easy to make contributions right from the browser.</li>
-<li>Look through our <a href="https://github.com/ChainSafe/lodestar/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee">outstanding unassigned issues</a>. (hint: look for issues labeled "good first issue")</li>
-<li>Join our <a href="https://discord.gg/aMxzVcr">discord chat</a>!</li>
+<li>:pencil2: See any typos? See any verbiage that should be changed or updated? Go for it! Github makes it easy to make contributions right from the browser.</li>
+<li>:mag_right: Look through our <a href="https://github.com/ChainSafe/lodestar/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee">outstanding unassigned issues</a>. <em>(Hint: look for issues labeled "good first issue"!)</em></li>
+<li>:speech_balloon: Join our <a href="https://discord.gg/aMxzVcr">Discord chat</a>!
+  <a href="https://discord.gg/aMxzVcr"><img alt="Discord" src="https://img.shields.io/discord/593655374469660673.svg?label=Discord&amp;logo=discord"/></a></li>
 </ul>
-<h1 id="reporting-a-bug">Reporting a bug?<a class="headerlink" href="#reporting-a-bug" title="Permanent link">¶</a></h1>
-<p><a href="https://github.com/ChainSafe/lodestar/issues/new/choose">Create a new issue!</a> Select the type of issue that best fits, and please fill out as much of the information as you can.</p>
-<h1 id="contribution-process">Contribution process<a class="headerlink" href="#contribution-process" title="Permanent link">¶</a></h1>
+<h2 id="reporting-a-bug">Reporting a bug?<a class="headerlink" href="#reporting-a-bug" title="Permanent link">¶</a></h2>
+<ul>
+<li>:spiral_notepad: <a href="https://github.com/ChainSafe/lodestar/issues/new/choose">Create a new issue!</a> Select the type of issue that best fits, and please fill out as much of the information as you can.</li>
+</ul>
+<h2 id="contribution-process">Contribution process<a class="headerlink" href="#contribution-process" title="Permanent link">¶</a></h2>
 <ol>
-<li>Make sure you're familiar with our contribution guidelines (this document!)</li>
-<li>Create your <a href="https://github.com/ChainSafe/lodestar/fork">own fork</a> of this repo</li>
-<li>Make your changes in your local fork</li>
-<li>If you've made a code change, make sure to lint and test your changes (<code>yarn lint</code> and <code>yarn test:unit</code>)</li>
+<li>Make sure you're familiar with our contribution guidelines <em>(this document)</em>!</li>
+<li>Create your <a href="https://github.com/ChainSafe/lodestar/fork">own fork</a> of this repository.</li>
+<li>Make your changes in your local fork.</li>
+<li>If you've made a code change, make sure to lint and test your changes (<code>yarn lint</code> and <code>yarn test:unit</code>).</li>
 <li>Make a pull request! We review PRs on a regular basis.</li>
 <li>You may be asked to sign a Contributor License Agreement (CLA). We make it relatively painless with CLA-bot.</li>
 </ol>
-<h1 id="lodestar-monorepo">Lodestar Monorepo<a class="headerlink" href="#lodestar-monorepo" title="Permanent link">¶</a></h1>
-<p>We're currently experimenting with hosting the majority of lodestar packages and support packages in this repository as a <a href="https://en.wikipedia.org/wiki/Monorepo">monorepo</a>. We're using <a href="https://lerna.js.org/">Lerna</a> to manage the packages.
-See <a href="https://github.com/ChainSafe/lodestar/tree/master/packages">packages/</a> for a list of packages hosted in this repo.</p>
-<h1 id="style-guide">Style Guide<a class="headerlink" href="#style-guide" title="Permanent link">¶</a></h1>
+<h2 id="lodestar-monorepo">Lodestar Monorepo<a class="headerlink" href="#lodestar-monorepo" title="Permanent link">¶</a></h2>
+<p>We're currently experimenting with hosting the majority of lodestar packages and support packages in this repository as a <a href="https://en.wikipedia.org/wiki/Monorepo">monorepo</a>. We're using <a href="https://lerna.js.org/">Lerna</a> to manage the packages. See <a href="https://github.com/ChainSafe/lodestar/tree/master/packages">packages/</a> for a list of packages hosted in this repo.</p>
+<h2 id="style-guide">Style Guide<a class="headerlink" href="#style-guide" title="Permanent link">¶</a></h2>
 <ul>
-<li>PRs should usually only update a single package (in our monorepo) at a time</li>
+<li>Pull requests should usually only update a single package (in our monorepo) at a time</li>
+<li>prefix your PR title with the module you are working on, e.g.: <code>validator: foo bar buz</code></li>
 <li>Many module class constructors have the following signature: <code>(options, dependencies)</code></li>
-<li>eg: <code>public constructor(opts: IExampleOptions, {db, logger}: IExampleModules)</code></li>
-<li>Modules should be designed to "do one thing and do it well"</li>
+<li>e.g.: <code>public constructor(opts: IExampleOptions, {db, logger}: IExampleModules)</code></li>
+<li>Modules should be designed to <em>"do one thing and do it well!"</em></li>
 <li>Consider the interface of a module -- events included, and make sure it is coherent</li>
 <li>Make sure your code is properly linted</li>
 <li>use an IDE that will show linter errors/warnings</li>
@@ -321,10 +480,10 @@ See <a href="https://github.com/ChainSafe/lodestar/tree/master/packages">package
 <li>Use <code>"</code> instead of <code>'</code></li>
 <li>All functions should have types declared for all parameters and return value</li>
 <li>All interfaces should be prefixed with a <code>I</code></li>
-<li>eg: <code>IMyInterface</code></li>
-<li>You probably shouldn't be using Typescript's <code>any</code></li>
+<li>e.g.: <code>IMyInterface</code></li>
+<li>You shouldn't be using TypeScript's <code>any</code></li>
 <li>Private class properties should not be prefixed with a <code>_</code></li>
-<li>eg: <code>private dirty;</code>, not <code>private _dirty;</code></li>
+<li>e.g.: <code>private dirty;</code>, not <code>private _dirty;</code></li>
 </ul>
 </li>
 <li>Make sure that your code is properly type checked:</li>
@@ -333,8 +492,8 @@ See <a href="https://github.com/ChainSafe/lodestar/tree/master/packages">package
 <li>Make sure that the tests are still passing:</li>
 <li>run <code>yarn test:unit</code> from the command line</li>
 </ul>
-<h1 id="community">Community<a class="headerlink" href="#community" title="Permanent link">¶</a></h1>
-<p>Come chat with us on <a href="https://discord.gg/aMxzVcr">discord</a>!</p>
+<h2 id="community">Community<a class="headerlink" href="#community" title="Permanent link">¶</a></h2>
+<p>Come chat with us on <a href="https://discord.gg/aMxzVcr">Discord</a> and join our public weekly planning meetings!</p>
 </article>
 </div>
 </div>
